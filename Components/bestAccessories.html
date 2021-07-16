@@ -1,0 +1,20 @@
+<section id="bestAccess">
+    <div class="accessories bd-grid">
+        <h3>Best Of Accessories</h3>
+        <p id="linebar"></p>
+    </div>
+    <div class="deals__container">
+        <div class="deal-item" ng-repeat="product in products | limitTo: 6:12">
+            <img ng-src="{{product.productImage}}" alt="phone1" ng-click="goToProduct(product.id)">
+            <i class="fa fa-heart"></i>
+            <h4>{{product.productTitle}}</h4>
+            <p>{{product.productDescription}}</p>
+            <div class="product_discount">
+                <span id="offDeal">{{product.productDiscount}}</span>
+                <span><strike>{{product.productOldPrice | number}}</strike></span>
+            </div>
+            <h5>{{product.productPrice | number}}</h5>
+            <button class="deal--btn" ng-click="goToCheckout(product.id)">Add to Cart</button>
+        </div>
+    </div>
+</section>

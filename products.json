@@ -1,0 +1,166 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productTitle": "Nokia Lumia 1020",
+            "productImage": "Images/phone12.png",
+            "productDescription": "5.5' - 8Gb RAM - 512 ROM - 12MP (Sharp Capmera)",
+            "productOldPrice": 25999,
+            "productPrice": 23999,
+            "productDiscount": "8% OFF"
+        },
+        {
+            "id": 2,
+            "productTitle": "Samsung M20",
+            "productImage": "Images/a23-prooo.png",
+            "productDescription": "6.1' - 8Gb RAM - 128 ROM - 48MP (Water Resistant)",
+            "productOldPrice": 20999,
+            "productPrice": 18999,
+            "productDiscount": "10% OFF"
+        },
+        {
+            "id": 3,
+            "productTitle": "iphone 12",
+            "productImage": "Images/spark-6-air-1.png",
+            "productDescription": "5.9' - 4GB RAM - 512 ROM - 12MP (Perfect Phone)",
+            "productOldPrice": 91999,
+            "productPrice": 86455,
+            "productDiscount": "20% OFF"
+        },
+        {
+            "id": 4,
+            "productTitle": "Oneplus 8T",
+            "productImage": "Images/pop-2x-3.png",
+            "productDescription": "5.9' - 12GB RAM - 256 ROM - 48MP (More Speed)",
+            "productOldPrice": 38999,
+            "productPrice": 36999,
+            "productDiscount": "9% OFF"
+        },
+        {
+            "id": 5,
+            "productTitle": "Samsung s21 ultra",
+            "productImage": "Images/phone12.png",
+            "productDescription": "6.8' - 12GB RAM - 512 ROM - 108MP (Extra Zoom)",
+            "productOldPrice": 98999,
+            "productPrice": 91999,
+            "productDiscount": "25% OFF"
+        },
+        {
+            "id": 6,
+            "productTitle": "iphone 11",
+            "productImage": "Images/nokia_c1_plus.png",
+            "productDescription": "5.5' - 4GB RAM - 256 ROM - 12MP (Best Iphone)",
+            "productOldPrice": 49999,
+            "productPrice": 44499,
+            "productDiscount": "12% OFF"
+        },
+        {
+            "id": 7,
+            "productTitle": "Huawei Band 4",
+            "productImage": "Images/band.png",
+            "productDescription": "Creative Watch Faces | Plug and Charge",
+            "productOldPrice": 20999,
+            "productPrice": 17999,
+            "productDiscount": "8% OFF"
+        },
+        {
+            "id": 8,
+            "productTitle": "HUAWEI buds 4i",
+            "productImage": "Images/sku.png",
+            "productDescription": "Bass Boosted | Get Free blutooth speakers",
+            "productOldPrice": 15999,
+            "productPrice": 11999,
+            "productDiscount": "12% OFF"
+        },
+        {
+            "id": 9,
+            "productTitle": "Apple SE",
+            "productImage": "Images/spark-6-air-1.png",
+            "productDescription": "4.5' - 4GB RAM - 256 ROM - 12MP (Small Iphone)",
+            "productOldPrice": 35999,
+            "productPrice": 32999,
+            "productDiscount": "12% OFF"
+        },
+        {
+            "id": 10,
+            "productTitle": "Oneplus Nord",
+            "productImage": "Images/nokia_c1_plus.png",
+            "productDescription": "5.9' - 4GB RAM - 256 ROM - 12MP (Best in Price)",
+            "productOldPrice": 29999,
+            "productPrice": 25999,
+            "productDiscount": "10% OFF"
+        },
+        {
+            "id": 11,
+            "productTitle": "Galaxy Buds",
+            "productImage": "Images/sku.png",
+            "productDescription": "Classic and comfort Sound with extra Bass",
+            "productOldPrice": 22999,
+            "productPrice": 18999,
+            "productDiscount": "20% OFF"
+        },
+        {
+            "id": 12,
+            "productTitle": "Samsung S20 FE",
+            "productImage": "Images/pop-2x-3.png",
+            "productDescription": "6.2' - 8GB RAM - 256 ROM - 12MP (Best in Class)",
+            "productOldPrice": 48999,
+            "productPrice": 44499,
+            "productDiscount": "10% OFF"
+        },
+        {
+            "id": 13,
+            "productTitle": "Samsung S20 FE",
+            "productImage": "Images/pop-2x-3.png",
+            "productDescription": "6.2' - 8GB RAM - 256 ROM - 12MP (Best in Class)",
+            "productOldPrice": 48999,
+            "productPrice": 44499,
+            "productDiscount": "10% OFF"
+        },
+        {
+            "id": 14,
+            "productTitle": "iphone 12",
+            "productImage": "Images/spark-6-air-1.png",
+            "productDescription": "5.9' - 4GB RAM - 512 ROM - 12MP (Perfect Phone)",
+            "productOldPrice": 91999,
+            "productPrice": 86455,
+            "productDiscount": "20% OFF"
+        },
+        {
+            "id": 15,
+            "productTitle": "iphone 11",
+            "productImage": "Images/nokia_c1_plus.png",
+            "productDescription": "5.5' - 4GB RAM - 256 ROM - 12MP (Best Iphone)",
+            "productOldPrice": 49999,
+            "productPrice": 44499,
+            "productDiscount": "12% OFF"
+        },
+        {
+            "id": 16,
+            "productTitle": "Galaxy Buds",
+            "productImage": "Images/sku.png",
+            "productDescription": "Classic and comfort Sound with extra Bass",
+            "productOldPrice": 22999,
+            "productPrice": 18999,
+            "productDiscount": "20% OFF"
+        },
+        {
+            "id": 17,
+            "productTitle": "S21 Ultra",
+            "productImage": "Images/phone12.png",
+            "productDescription": "6.8' - 12GB RAM - 512 ROM - 108MP (Extra Zoom)",
+            "productOldPrice": 98999,
+            "productPrice": 91999,
+            "productDiscount": "25% OFF"
+        },
+        {
+            "id": 18,
+            "productTitle": "Oneplus 8T",
+            "productImage": "Images/pop-2x-3.png",
+            "productDescription": "5.9' - 12GB RAM - 256 ROM - 48MP (More Speed)",
+            "productOldPrice": 38999,
+            "productPrice": 36999,
+            "productDiscount": "9% OFF"
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+// .mySlides {
+//   display: none;
+//     img {vertical-align: middle;
+//     height: 300px;
+//     width: 100%;
+//     margin-top: 150px;
+//     cursor: pointer;
+// }
+// }
+
+/* Slideshow container */
+// .slideshow-container {
+//   max-width: 1200px;
+
+//   margin: auto;
+// }
+
+/* The dots/bullets/indicators */
+// .dot {
+//   height: 15px;
+//   width: 15px;
+//   margin: 0 2px;
+//   background-color: #bbb;
+//   border-radius: 50%;
+//   display: inline-block;
+//   transition: background-color 0.6s ease;
+// }
+
+// .active {
+//   background-color: #717171;
+// }
+
+/* Fading animation */
+// .fade {
+//   -webkit-animation-name: fade;
+//   -webkit-animation-duration: 1.5s;
+//   animation-name: fade;
+//   animation-duration: 1.5s;
+// }
+
+
+
+// @keyframes fade {
+//   from {opacity: .4} 
+//   to {opacity: 1}
+// }
+.slideshow{
+  padding:10px auto;
+  position: relative;
+  top: 40px;
+  height: 330px;
+  margin: auto;
+}
+.center-grey{
+       background:#f2f2f2;
+}
+.slider{
+  display: flex;
+  max-width: 1200px;
+	margin: auto;
+}
+.slide{
+	box-shadow: 0px 0px 15px #999;
+    img {
+    height: 300px;
+    width: 100%;
+    cursor: pointer;
+}
+}
+.arrows{
+  z-index: 1;
+  margin: 10px auto;
+	position: absolute;
+	top: 150px;
+      a{
+        &:first-child{
+            position: absolute;
+            left: 10px;
+          }
+        &:nth-child(2){
+          position: absolute;
+          left: 1150px;
+        }
+      }
+}
+
+.arrows img{
+	height: 32px;
+}
+// Animation for images
+.slide.ng-hide-add, .slide.ng-hide-remove {
+  -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+  -o-transition:all linear 0.5s;
+  transition:all linear 0.3s;
+  display:block!important;
+}
+ 
+.slide.ng-hide-add.ng-hide-add-active,.slide.ng-hide-remove {
+  opacity:0;
+}
+ 
+.slide.ng-hide-add,.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+}
+@media screen and (max-width:800px){
+  .arrows{
+      a{
+        &:nth-child(2){
+          left: 725px;
+        }
+      }
+    }
+}
+@media screen and (max-width:500px){
+
+    .slideshow{
+      position: relative;
+     
+      z-index:-1;
+    }
+    .slide{
+
+      img{
+        height: 250px;
+        width: 100%;
+      }
+    }
+    .arrows{
+      a{
+        &:nth-child(2){
+          left: 320px;
+        }
+      }
+    }
+}

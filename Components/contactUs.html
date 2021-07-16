@@ -1,0 +1,26 @@
+<section>
+<div class="contact">
+    <div class="innerDiv">
+        <p>If you need any help</p>
+        <h1>Connect with us</h1>
+        <p>By filling this form</p>
+        <form name="contactForm" ng-submit="submitForm()" novalidate>
+            <input type="text" name="name" ng-model="contact.name" placeholder="Enter your name" ng-required="true" />
+            <div class="error" ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+                <small style="text-align: center; display:block; color:red;">Enter valid name</small>
+            </div>
+            <input type="email" name="email" ng-model="contact.email" placeholder="Enter your name"
+                ng-required="true" />
+            <div class="error" ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+                <small style="text-align: center; display:block; color:red;">Enter valid Email</small>
+            </div>
+            <textarea name="message" ng-model="contact.message" placeholder="Enter your message"
+                ng-required="true"></textarea>
+            <div class="error" ng-show="contactForm.message.$touched && contactForm.message.$invalid">
+                <small style="text-align: center; display:block; color:red;">Enter valid message</small>
+            </div>
+            <input type="submit" value="Submit" ng-disabled="contactForm.$invalid">
+        </form>
+    </div>
+</div>
+</section>

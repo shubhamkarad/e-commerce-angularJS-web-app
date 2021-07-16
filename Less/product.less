@@ -1,0 +1,255 @@
+.product{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &--image{
+        display: inline-block;
+        width:500px;
+        object-fit: contain;
+        img{
+            margin-top:50px ;
+            height: 600px;
+            width:auto;
+        }
+    }
+    &--title{
+        display: inline-block;
+        width: fit-content;  
+        h1{
+            margin-top: 73px;
+            font-weight: bold;
+        }
+        .product__rating{
+            i:hover{
+                color: @yellow;
+                cursor: pointer;
+            }
+            .like{
+                display:inline-block;
+                margin-left: 20px;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            .share{
+                display:inline-block;
+                margin-left: 20px;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+        .product__discount{
+
+            #discount{
+                color: @pink;
+               position: relative;
+               top: 22px;
+              
+            }
+            h3:nth-child(2){
+                display: inline-block;
+                color: @darkGrey;
+            }
+            h2{
+                display: inline-block;
+                position: relative;
+                left: 80px;
+                color: @lime;
+            }
+        }
+        .product__quantity{
+            display:block;
+            align-self: center;
+            margin-top: 20px;
+            button{
+                outline: none;
+                background-color:transparent ;
+                border: none;
+                font-size: 1.5rem;
+                margin: auto 10px;
+                cursor: pointer;
+            }
+            input[type=number]{
+                outline: none;
+                border: .5px solid black;
+                width: 40px;
+                height: 50px;
+               padding: 20px auto;
+            }
+        }
+        .product__btn{
+            margin: 20px auto;
+            display: flex;
+            .cmpBtn{
+                button{  
+                display: inline-block;
+                padding: 10px 60px;
+                outline: none;
+                border: none;
+                color: #fff;
+                text-decoration: none;
+                background-color: @blue;
+                border-radius: 25px;
+                cursor: pointer;
+                }
+            }
+            .addcrtBtn{
+                 button{  
+                display: inline-block;
+                padding: 10px 60px;
+                outline: none;
+                border: none;
+                color: #fff;
+                text-decoration: none;
+                background-color: @red;
+                border-radius: 25px;
+                margin-left: 20px;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+   
+}
+.product--overview{
+        display: block;
+
+        .nav-menu{
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            li{
+                cursor: pointer;
+                display: inline;
+                padding: 0 10px;
+            &.active{
+                background-color: @darkGreen;
+                border-radius: 10px;
+                color: #fff;
+            }
+            }
+        }
+        #linebar{
+        margin-top: 5px;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+    }
+.product--description{
+    text-align: center;
+    table.center{
+        padding: 10px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        td{
+            padding: 10px 20px;
+            &:first-child{
+                color: @pink;
+                font-weight: bold;
+            }
+            &:nth-child(2){
+                margin-top: 30px;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:500px){
+    .product{
+        display: grid;
+        grid-template-columns:1fr;
+        margin: 0 auto;
+        width: 100%;
+        &--image{
+            width: 300px;
+            img{
+                display: block;
+                margin: 5px auto;
+                position: relative;
+                top: 50px;
+                left: 35px;
+                width: 290px;
+                height: 290px;
+            }
+        }
+        &--title{
+            width: 100%;
+            text-align: center;
+            object-fit: contain;
+            h2{                
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+       .product__btn{
+            margin: 20px auto;
+            display: flex;
+            margin: 30px auto;
+            .cmpBtn{
+                margin: 0px auto;
+                button{  
+                display: block;
+                padding: 10px 25px;
+                margin: 0px auto;
+                }
+            }
+            .addcrtBtn{
+                 margin: 0px auto;
+                 button{  
+                padding: 10px 25px;
+                margin-left: 20px;
+                }
+            }
+     }
+}
+}
+@media screen and (max-width:800px){
+    .product{
+        display: grid;
+        grid-template-columns:1fr;
+        width: 100%;
+        padding: 5px 20px;
+        &--img{
+            width: 100%;
+            img{
+                width: 100%;
+                display: block;
+                margin: 0px auto;
+            }
+        }
+          &--title{
+            width: 100%;
+            text-align: center;
+            object-fit: contain;
+            h2{                
+                text-align: center;
+            }
+        }
+        .product__btn{
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            margin: 30px auto;
+            .cmpBtn{
+                margin: 0px auto;
+                button{  
+                display: block;
+                padding: 10px 25px;
+                margin: 0px auto;
+                }
+            }
+            .addcrtBtn{
+                 margin: 0px auto;
+                 button{  
+                padding: 10px 25px;
+                margin-left: 20px;
+                }
+            }
+     }
+    }
+}

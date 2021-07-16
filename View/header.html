@@ -1,0 +1,49 @@
+<!-- ------------------Navbar Section---------------- -->
+<header>
+    <nav>
+        <div class="navbar">
+            <a href="#" class="navbar--logo">
+                <img src="Images/logo.png" alt="Logo">
+            </a>
+            <div class="navbar--menu" ng-controller = "myController">
+                <a href="#" id="btn" ng-click="slider()" class="navbar--link"><i
+                        class="fa fa-bars"></i><span>Categories</span>
+                    <!-- ------------------Categories Sidebar---------------- -->
+                    <div class="sidebar" ng-if="isVisible" ng-show="isHide">
+                        <a href="#" class="closeBtn" ng-click="slider()"> <i class="fa fa-times"></i></a>
+                        <ul>
+                            <li><a href="#"><b>Mobile Phones</b></a>
+                                <ul>
+                                    <li><a href="#home">Apple <i class="fa fa-arrow-right"></i></a></li>
+                                    <li><a href="#home">Samsung<i class="fa fa-arrow-right"></i></a></li>
+                                    <li><a href="#home">Oneplus<i class="fa fa-arrow-right"></i></a></li>
+                                    <li><a href="#home">Realme<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><b>Accessories</b></a></li>
+                            <ul>
+                                <li><a href="#bestAccess">Mobile Cables <i class="fa fa-arrow-right"></i></a></li>
+                                <li><a href="#bestAccess">Memory Card<i class="fa fa-arrow-right"></i></a></li>
+                                <li><a href="#bestAccess">Headphones<i class="fa fa-arrow-right"></i></a></li>
+                                <li><a href="#bestAccess">Mifone<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                        </ul>
+                    </div></a>
+
+                <a href="#" class="navbar--link" ><input type="text" value=""  placeholder="Search"><i
+                        class="fa fa-search"></i></a>
+                <a href="#footerNav" class="navbar--link"><i class="fa fa-user-circle"></i></a>
+                <a href="#!/contactUs" class="navbar--link"><i class="fa fa-question-circle"></i></a>
+                <a href="#!/checkout" class="navbar--link"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <div class="mobileNavbar">
+                <a href="#" class="navbar--link"> <i class="fa fa-home"></i></a>
+                <a href="#footerNav" class="navbar--link"><i class="fa fa-id-badge"></i></a>
+                <a href="#" id="btn1" ng-click="slider()" class="navbar--link"> <i class="fa fa-th"></i></a>
+                <a href="#footerNav" class="navbar--link"><i class="fa fa-question-circle"></i></a>
+                <a href="#" class="navbar--link"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+            
+</header>

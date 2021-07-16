@@ -1,0 +1,47 @@
+<body>
+    <div class="slideshow" ng-controller="slideshowC">
+        <slider images="images"/>
+    </div>
+    <!-- ------------------Top Deals Section---------------- -->
+    <section id="home">
+        <div class="deals bd-grid">
+            <h3>Top Deals on your favourite phone!</h3>
+            <p id="linebar"></p>
+        </div>
+        <div class="deals__container">
+            <div class="deal-item" ng-repeat= "product in products | limitTo: 6">
+                <img ng-src="{{product.productImage}}" ng-click="goToProduct(product.id)" alt="phone1">
+                <i class="fa fa-heart"></i>
+                <h5>{{product.productTitle}}</h5>
+                <p>{{product.productDescription}}</p>
+                <div class="product_discount">
+                <span id="offDeal">{{product.productDiscount}} </span>
+                <span><strike>{{product.productOldPrice | number}}</strike></span>
+                </div>
+                <h5>RS{{product.productPrice | number}}</h5>
+                <button class="deal--btn" ng-click="goToCheckout(product.id)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------Middle page Banners---------------- -->
+    <div class="midOffers bd-grid">
+        <img src="Images/s21plus-galaxy-desktop.webp" alt="">
+        <div class="mid__container">
+            <img src="Images/Oraimo_OEB.png" alt="">
+            <img src="Images/Mifi_block.png" alt="">
+        </div>
+    </div>
+    <!-- ------------------Accessories---------------- -->
+    <ng-include src="'Components/Accessories.html'"></ng-include>
+
+    <!-- ------------------Headphone Offer Banner---------------- -->
+    <div class="midOffers bd-grid">
+        <img src="Images/SNY_Headphone_bannerjpg.jpg" alt="">
+    </div>
+    <!-- ------------------Best of Accessories---------------- -->
+    <ng-include src="'Components/bestAccessories.html'"></ng-include>
+
+    <!-- ------------------Scroll Reveal---------------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+   
+</body>

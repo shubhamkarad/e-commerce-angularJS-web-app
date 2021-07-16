@@ -1,0 +1,27 @@
+<div>
+    <!-- Display random item using custom directive -->
+    <section id="home">
+        <div class="deals bd-grid">
+            <h3>Top Searched item</h3>
+            <p id="linebar"></p>
+        </div>
+        <div class="deals__container">
+            <div class="deal-item">
+                <img ng-src="{{products[random].productImage}}" ng-click="goToProduct(product.id)" alt="phone1">
+                <i class="fa fa-heart"></i>
+                <h5>{{products[random].productTitle}}</h5>
+                <p>{{products[random].productDescription}}</p>
+                <div class="product_discount">
+                    <span id="offDeal">{{products[random].productDiscount}} </span>
+                    <span><strike>{{products[random].productOldPrice | number}}</strike></span>
+                </div>
+                <h5>RS{{products[random].productPrice | number}}</h5>
+                <button class="deal--btn" ng-click="goToCheckout(product.id)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+</div>
+<div>
+
+</div>

@@ -1,0 +1,227 @@
+/*-----------Google Fonts------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+//Importing less files 
+@import "navbar";
+@import "footer";
+@import "product";
+@import "media_queries";
+@import "slideshow";
+@import "checkout";
+@import "contactUs.less";
+//-----Constant-------
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    // transition: .3s;
+}
+.bd-grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    max-width: 1200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}
+/* //----------------Sidebar---------------// */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: @light;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 3px 0px 5px #0000005c;
+    ul,li{
+        padding: 0;
+    }
+    ul{
+        margin-top: 35px;
+        padding: 20px 20px;
+        
+        li{
+            list-style: none;
+                  
+            a{
+                padding: 10px 20px;
+                color:@dark;  
+                display: block;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(0,0,0,.2);
+                transition: all .3s ease;
+                &:hover{
+                    background-color: @yellow;
+                    transition: all .3s ease;
+                }
+                i{
+                    font-size: 1rem;
+                    color: @dark;
+                    float: right;
+                }
+            }
+        }
+    }
+    .closeBtn{
+        color: @dark;
+        font-size: 2rem;
+        position: absolute;
+        top: 55px;
+        left: 220px;
+        i{
+            color: @yellow;
+         &:hover{
+            color: @red;
+        }
+        }
+       
+    }
+    
+}
+// .activeSidebar{
+//         left: 0;
+//     }
+
+
+/* //----------------Deals---------------// */
+
+.deals{
+
+    #linebar{
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+    &__container{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1200px;
+        align-items: center;
+        margin: 10px auto;
+        background-color: @light;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    
+}
+.deal-item{
+    background-color: #fff;
+    height: 400px;
+    width: 250px;
+    margin: 0 3px;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+      box-shadow: 3px 3px 5px #0000005c;
+
+      &:hover{
+          border: 1px solid green;
+      }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    i{
+        font-size: 1.3rem;
+        float: right;
+        color:#a19e9e;
+
+        &:hover{
+            color: @red;
+            transition: all 0.3s ease;
+        }
+    }
+    p{
+        font-size: .8rem;
+    }
+    .product_discount{
+        margin-top: 10px;
+    }
+    #offDeal{
+        padding-top:20px;
+        color:@lime;
+    }
+    button{
+        float: left;
+        position: absolute;
+        top: 340px;
+        left: 32px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        background-color: @darkGreen;
+        color: @light;
+        cursor: pointer;
+
+        &:hover{
+            background-color: @darkBlue;
+            transition: all 0.3s ease;
+        }
+    }
+}
+//-----mid offers-----
+.midOffers{
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .mid__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: .3rem;
+        max-width: 1200px;
+        margin: 5px auto;
+        justify-self: center;
+        
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+//-------Accessories------------
+.accessories{
+    #linebar{
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+}
+/* //----------------Responsive ---------------// */
+@media screen and(max-width:800px){
+    .deals__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;        
+        margin: 0 auto;
+        padding: 5px 10px;     
+    }
+    
+}
+@media screen and(max-width:500px){
+         .deals__container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;        
+            margin: 0 auto;     
+        }
+        .deal-item{
+            height: 400px;
+            width: 100%;                 
+            button{
+                display: block;
+                top: 340px;
+            }
+            i{
+                margin-top: 20px;
+            }
+        
+        }
+}

@@ -1,0 +1,96 @@
+<section>
+    <div class="product ">
+        <div class="product--image">
+            <img ng-src="{{product.productImage}}" alt="Smartphone">
+        </div>
+        <!-- ------------------Product Title---------------- -->
+        <div class="product--title">
+            <h1>{{product.productTitle}}</h1>
+            <h2>{{product.productDescription}}</h2>
+            <div class="product__rating">
+                <input type="radio" style="display: none;" value="1">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <div class="like">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <div class="share">
+                    <i class="fa fa-share-alt"></i>
+                </div>
+            </div>
+            <div class="product__discount">
+                <h3 id="discount">{{product.productDiscount}}</h3>
+                <h3><strike>RS{{product.productOldPrice | number}}</strike></h3>
+                <h2>RS {{product.productPrice * count | number}}</h2>
+            </div>
+            <div class="product__quantity">
+                <span>Quantity</span>
+                <button type="button" name="qty"  ng-click="count=count - 1" >-</button>
+                <input type="number" min="1" name="qty" aria-label="Quantity"  value="{{count}}">
+                <button type="button" name="Add"  ng-click="count=count + 1" ng-init="count=1">+</button>
+            </div>
+            <div class="product__btn">
+                <div class="cmpBtn">
+                    <button type="button">Compare</button>
+                </div>
+                <div class="addcrtBtn">
+                    <button type="button" ng-click="goToCheckout(product.id)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Product Details---------------- -->
+    <div class="product--overview bd-grid">
+        <div class="nav-menu">
+            <ul>
+                <!-- used array of items and ng-class method to show the active element -->
+                <li ng-repeat="item in items" class="item" ng-class="{'active': item.id == states.activeItem}"
+                    ng-click="states.activeItem=item.id">{{item.title}}</li>
+                <!-- <li>Details</li>
+                <li>Review</li> -->
+            </ul>
+        </div>
+        <p id="linebar"></p>
+    </div>
+    <div class="product--description">
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td>Display</td>
+                    <td>5.5"</td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td>
+                        <p>5MP Front Camera</p>
+                        <p>5MP Back Camera</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td>
+                        <p>RAM 8GB</p>
+                        <p>ROM 512GB</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Network</td>
+                    <td>SIM type - Single</td>
+                </tr>
+                <tr>
+                    <td>Battery</td>
+                    <td>4500MAh</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>1 Year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <cards products="products"></cards>
+
+</section>
